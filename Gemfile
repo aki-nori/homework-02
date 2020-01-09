@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -55,7 +56,7 @@ group :test do
   # gem 'selenium-webdriver'
   # gem 'chromedriver-helper'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  
+
   # 下の６つのgemを追加する
   gem 'rspec-rails'
   gem "factory_bot_rails"
@@ -63,6 +64,9 @@ group :test do
   gem 'faker' #ランダム値の生成
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
+
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
